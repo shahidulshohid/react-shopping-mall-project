@@ -12,17 +12,34 @@ function App() {
 
   const [selectedProducts, setSelectedProducts] = useState([])
 
+  const [price, setPrice] = useState(500)
+
+  const handleIncreasePrice = pr => {
+    setPrice(price + pr)
+  }
+  const handleDeletePrice = id => {
+    const product = selectedProducts.find(p => p.id === id)
+    setPrice(price - product.price)
+  }
+
+  const handleDelete = (id) => {
+    handleDeletePrice(id)
+    const remaining = selectedProducts.filter(p => p.id !== id)
+    setSelectedProducts(remaining)
+  }
+  console.log(selectedProducts)
+
   const handleSelectedProduct = product => {
     const isExist = selectedProducts.find(p => p.id === product.id)
     if(isExist){
       alert('product already exist')
     }
     else{
+      handleIncreasePrice(product.price)
       const newProducts = [...selectedProducts, product]
       setSelectedProducts(newProducts)
     }
   }
-  console.log(selectedProducts)
 
   const handleIsActiveState = (status) => {
     if(status === "cart"){
@@ -41,10 +58,10 @@ function App() {
 
   return (
     <>
-    <Navbar></Navbar>
+    <Navbar selectedProducts={selectedProducts} price={price}></Navbar>
     <div className="flex">
     <AllProducts handleSelectedProduct={handleSelectedProduct}></AllProducts>
-    <CartContainer handleIsActiveState={handleIsActiveState} isActive={isActive}></CartContainer>
+    <CartContainer handleIsActiveState={handleIsActiveState} isActive={isActive} selectedProducts={selectedProducts} handleDelete={handleDelete}></CartContainer>
     </div>
     </>
   )

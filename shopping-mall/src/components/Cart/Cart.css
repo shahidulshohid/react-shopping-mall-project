@@ -1,0 +1,10 @@
+.selected-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+}
+.selected-img {
+    width: 60px;
+    height: 60px;
+}
