@@ -1,0 +1,13 @@
+.toggle{
+    display: flex;
+    justify-content: space-between;
+}
+.active {
+    background-color: blue;
+    color: white;
+}
+.btn{
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}

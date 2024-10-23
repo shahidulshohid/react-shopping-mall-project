@@ -1,0 +1,58 @@
+{ "products": [
+        {
+          "id": 1,
+          "name": "Wireless Headphones",
+          "image": "https://i.ibb.co.com/P9FJ4Xw/onne-beauty-6c-Gn-T43v7-PE-unsplash.jpg",
+          "description": "Noise-cancelling over-ear wireless headphones with high-quality sound.",
+          "price": 199.99,
+          "category": "Electronics",
+          "isFeature": true
+        },
+        {
+          "id": 2,
+          "name": "Stainless Steel Water Bottle",
+          "image": "https://i.ibb.co.com/bFr6gVx/harper-sunday-t-BKYoc-Akz-RU-unsplash.jpg",
+          "description": "Durable and insulated water bottle, keeps drinks cold for 24 hours.",
+          "price": 25.50,
+          "category": "Outdoors",
+          "isFeature": false
+        },
+        {
+          "id": 3,
+          "name": "Smartphone Stand",
+          "image": "https://i.ibb.co.com/hWBDwnq/devin-avery-z-Zm7th0-E47-M-unsplash.jpg",
+          "description": "Adjustable and foldable smartphone stand, compatible with most devices.",
+          "price": 15.99,
+          "category": "Accessories",
+          "isFeature": true
+        },
+        {
+          "id": 4,
+          "name": "Leather Wallet",
+          "image": "https://i.ibb.co.com/9gggccz/jason-mavrommatis-K1u-LEiq-TQEA-unsplash.jpg",
+          "description": "Classic bifold leather wallet with RFID protection.",
+          "price": 49.99,
+          "category": "Fashion",
+          "isFeature": false
+        },
+        {
+          "id": 5,
+          "name": "Gaming Mouse",
+          "image": "https://i.ibb.co.com/pxphM7P/pepi-stojanovski-EF7-BVa9-BB2-M-unsplash.jpg",
+          "description": "High-performance gaming mouse with customizable buttons and RGB lighting.",
+          "price": 79.99,
+          "category": "Gaming",
+          "isFeature": true
+        },
+        {
+          "id": 6,
+          "name": "Yoga Mat",
+          "image": "https://i.ibb.co.com/8548y6Q/curology-DGH1u80s-Zik-unsplash.jpg",
+          "description": "Eco-friendly non-slip yoga mat with extra cushioning.",
+          "price": 35.99,
+          "category": "Fitness",
+          "isFeature": false
+        }
+      ]
+}
+  
